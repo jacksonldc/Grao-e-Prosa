@@ -1,0 +1,847 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:wght@100..700&display=swap');
+
+/* configuracoes gerais da pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.docker {
+    display: flex;
+}
+
+
+header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    background-color: rgb(150, 79, 0);
+    border-top: 1px solid #000000;
+}
+
+#logo {
+    position: absolute;
+    top: 0.5rem;
+    left: 3.75rem;
+    width: 10.5rem;
+    height: 10.5rem;
+}
+
+
+nav {
+    display: flex;
+    gap: 8.5rem;
+    margin-top: 1rem;
+}
+
+.a-menu {
+    padding: 0.4rem 0;
+    font: 300 1.5rem "Montserrat", sans-serif;
+    border-bottom: 2px solid transparent;
+}
+
+.a-menu:link, .a-menu:visited {
+    color: #e8d2bc;
+}
+
+.a-menu:hover, .a-menu:active {
+    color: #ffffff;
+    border-bottom: 2px solid #c8a27a;
+}
+
+
+#bt-reservar, #bt-menu-cardapio {
+    position: absolute;
+    top: 1.4rem;
+    right: 3.75rem;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    width: 11.7rem;
+    height: 3.125rem;
+    padding-left: 0.9rem;
+    background-color: #7a3d08;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.45);
+    font: 300 1.5rem "Montserrat", sans-serif;
+    color: #f2e4d5;
+}
+
+#bt-reservar img, #bt-menu-cardapio img {
+    width: 2.2rem;
+    height: auto;
+}
+
+
+#pag-inicio {
+    margin-top: 1rem;
+    padding-top: 3.7rem;
+    background: url("imagens/imagem%20de%20fundo%20in%C3%ADcio.png") center / cover no-repeat;
+}
+
+#card-principal {
+    width: 38.5rem;
+    margin: 0 auto;
+    padding: 1.25rem 1.9rem;
+    background-color: rgba(60, 42, 32, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#subtitulo {
+    display: flex;
+    align-items: center;
+    height: 2.4rem;
+    margin-left: 0.2rem;
+    font: 300 2rem "Montserrat", sans-serif;
+    color: #e6d5c3;
+}
+
+.linha {
+    width: 3.5rem;
+    height: 0.45rem;
+    border-radius: 4px;
+    background-color: #c8a27a;
+}
+
+#texto-subtitulo {
+    margin: 0 0.75rem 0 1.2rem;
+}
+
+#pag-inicio h1 {
+    margin: 1.5rem 0 2rem 0.4rem;
+    font: 500 4rem/5.25rem "Playfair Display", serif;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+#destaque {
+    color: #c8a27a;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+#bt-cardapio {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 6.6rem;
+    padding-left: 1.6rem;
+    background-color: #6b2d00;
+    border: 1px solid #a5612f;
+    border-radius: 2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    font: 400 2rem "Montserrat", sans-serif;
+    color: #ffffff;
+}
+
+#bt-cardapio img {
+    width: 3rem;
+    height: auto;
+    margin-right: 1.5rem;
+}
+
+#img-banner {
+    width: 74%;
+    height: auto;
+    margin: 1.1rem auto 0;
+    border: 1px solid #c8a27a;
+    border-radius: 2.5rem;
+}
+
+
+#divisoria {
+    padding-top: 1.4rem;
+    background-color: #1b1b1b;
+}
+
+#barra {
+    height: 3.1rem;
+    background-color: rgb(150, 79, 0);
+}
+
+
+#pag-sobre {
+    padding-bottom: 4.75rem;
+    background: url("imagens/imagem%20de%20fundo%20sobre.png") center / cover no-repeat;
+}
+
+#img-sobre {
+    width: 92%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #c8a27a;
+    border-radius: 2.5rem;
+}
+
+#pag-sobre h2 {
+    margin-top: 0.75rem;
+    text-align: center;
+    font: 700 4.25rem/5.1rem "Playfair Display", serif;
+    color: #ffffff;
+}
+
+#pag-sobre h2 span {
+    margin-left: 0.4rem;
+    color: #c8a27a;
+}
+
+#texto-sobre {
+    width: 52rem;
+    margin: 0.6rem auto 0;
+    padding: 1.4rem 2.9rem 1.4rem 2.25rem;
+    background-color: rgba(60, 42, 32, 0.55);
+    border: 1px solid rgba(200, 162, 122, 0.35);
+    font: 400 1.4rem/2rem "Playfair Display", serif;
+    color: #f0e6da;
+}
+
+#destaques {
+    justify-content: space-between;
+    width: 93%;
+    margin: 2.6rem auto 0;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    height: 8.2rem;
+    background-color: rgba(60, 42, 32, 0.55);
+    border: 1px solid rgba(200, 162, 122, 0.35);
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #ffffff;
+}
+
+.caixa b {
+    font-weight: 700;
+}
+
+.caixa span {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.italico {
+    font-style: italic;
+}
+
+#caixa-1 {
+    width: 24rem;
+    padding-left: 0.6rem;
+}
+
+#caixa-2 {
+    width: 24rem;
+    padding-left: 2.5rem;
+}
+
+#caixa-3 {
+    width: 25.6rem;
+    padding-left: 1.5rem;
+}
+
+
+#citacao {
+    padding: 1.4rem 0 0.8rem;
+    background-color: #1b1b1b;
+    border: 1px solid rgba(200, 162, 122, 0.6);
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+#frase {
+    font: 700 1.9rem/2.75rem "Playfair Display", serif;
+    color: #ffffff;
+}
+
+#autor {
+    margin-top: 1.1rem;
+    font: italic 400 2.1rem/2.75rem "Playfair Display", serif;
+    color: #e8dccb;
+}
+
+
+#pag-espaco {
+    padding: 2.4rem 0 1.5rem;
+    background: url("imagens/imagem%20de%20fundo%20espa%C3%A7o.png") center / cover no-repeat;
+}
+
+#pag-espaco .docker {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10.4rem;
+}
+
+.card {
+    width: 21.6rem;
+    background-color: rgba(35, 28, 25, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#card-2 {
+    margin-top: 0.6rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.card-text {
+    padding: 0.75rem 0.55rem 1.4rem;
+}
+
+#card-2 .card-text {
+    padding-top: 0.1rem;
+}
+
+.card h3 {
+    margin-bottom: 2px;
+    text-align: center;
+    font: 600 2rem/2.75rem "Playfair Display", serif;
+    color: #ffffff;
+}
+
+.card-text p {
+    height: 8rem;
+    padding: 1.8rem 0.6rem 0 2.25rem;
+    background-color: #dfc4ab;
+    border: 2px dashed #f3e8da;
+    font: 400 1.5rem/2rem "Playfair Display", serif;
+    color: #2a1a10;
+}
+
+#card-2 .card-text p {
+    padding-left: 1.4rem;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.6rem;
+    background-color: #1b1815;
+    border-top: 1px solid rgba(200, 162, 122, 0.35);
+}
+
+footer p {
+    font: 300 1.4rem "Montserrat", sans-serif;
+    color: #e8dccb;
+}
+
+.nome-footer {
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.nome-footer:hover {
+    color: #c8a27a;
+}
+
+
+#pag-reserva {
+    min-height: 90vh;
+    padding: 5.6rem 0 12.5rem;
+    background: url("imagens/imagem%20de%20fundo%20sobre.png") center / cover no-repeat;
+}
+
+#pag-reserva h1 {
+    text-align: center;
+    font: 400 4.25rem/5rem "Playfair Display", serif;
+    color: #dfc4ab;
+}
+
+#conteudo-reserva {
+    display: grid;
+    grid-template-columns: 1fr 31.4rem;
+    width: 78%;
+    margin: 1.25rem auto 0;
+}
+
+
+.bloco {
+    margin-bottom: 2.9rem;
+}
+
+.bloco h2 {
+    font: 700 2.1rem/2.75rem "Playfair Display", serif;
+    color: #dfc4ab;
+}
+
+.bloco p {
+    font: 400 1.25rem/1.6rem "Roboto Mono", monospace;
+    color: #f2eae0;
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: 14.5rem 14.5rem;
+    column-gap: 2.4rem;
+    row-gap: 2.6rem;
+    align-content: start;
+    margin-top: 2rem;
+}
+
+#campo-email {
+    grid-column: 1 / 3;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font: 700 1.5rem/1.75rem "Roboto Mono", monospace;
+    color: #dfc4ab;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    height: 2.25rem;
+    padding: 0 1.2rem;
+    background-color: #dfc4ab;
+    border: none;
+    border-radius: 3px;
+    font: 300 1rem "Montserrat", sans-serif;
+    color: #3a2a1e;
+}
+
+input::placeholder {
+    color: #7b6a5c;
+}
+
+#botoes {
+    grid-column: 1 / 3;
+    display: flex;
+    gap: 2.4rem;
+    margin-top: 0.25rem;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 14.5rem;
+    height: 2.9rem;
+    border-radius: 0.4rem;
+    font: 700 1.25rem "Roboto Mono", monospace;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #6b2d00;
+    border: 1px solid #a5612f;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.45);
+    color: #ffffff;
+}
+
+input[type="reset"] {
+    background-color: transparent;
+    border: 2px solid #dfc4ab;
+    color: #dfc4ab;
+}
+
+
+#pag-cardapio {
+    min-height: 90vh;
+    padding: 3.9rem 0 12.5rem;
+    background: url("imagens/imagem%20de%20fundo%20in%C3%ADcio.png") center / cover no-repeat;
+}
+
+#pag-cardapio h1 {
+    text-align: center;
+    font: 500 4.5rem/5rem "Playfair Display", serif;
+    color: #dfc4ab;
+}
+
+#colunas {
+    display: grid;
+    grid-template-columns: 24rem 29rem 23.6rem;
+    width: 76.6rem;
+    margin: 8.4rem auto 0;
+}
+
+.coluna {
+    height: 12.2rem;
+    padding: 1.2rem 0.5rem 0 0;
+}
+
+#coluna-2 {
+    padding-left: 1.9rem;
+    border-left: 3px solid #e6d5c3;
+}
+
+#coluna-3 {
+    padding-left: 1.1rem;
+    border-left: 3px solid #e6d5c3;
+}
+
+.coluna h2 {
+    margin-bottom: 1.1rem;
+    font: 500 2.1rem/2.75rem "Playfair Display", serif;
+    white-space: nowrap;
+    color: #dfc4ab;
+}
+
+#titulo-doces {
+    font: 700 2rem/2.75rem "Roboto Mono", monospace;
+}
+
+.coluna ul {
+    list-style: none;
+}
+
+.coluna li {
+    font: 600 1.2rem/1.7rem "Roboto Mono", monospace;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+
+
+/* RESPONSIVIDADE - MOBILE (até 768px) */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        justify-content: space-between;
+        height: 4.2rem;
+        padding: 0 0.75rem;
+    }
+
+    #logo {
+        position: static;
+        width: 4.8rem;
+        height: 4.8rem;
+        margin-top: 1.1rem;
+    }
+
+    nav {
+        gap: 1.1rem;
+        margin-top: 0;
+    }
+
+    .a-menu {
+        font-size: 0.85rem;
+    }
+
+    #bt-reservar, #bt-menu-cardapio {
+        position: static;
+        width: auto;
+        height: 2.1rem;
+        padding: 0 0.65rem;
+        gap: 0.35rem;
+        font-size: 0.75rem;
+    }
+
+    #bt-reservar img, #bt-menu-cardapio img {
+        width: 1.1rem;
+    }
+
+
+    /* TELA PRINCIPAL */
+    #pag-inicio {
+        margin-top: 0;
+        padding: 2.2rem 1rem 1.8rem;
+    }
+
+    #card-principal {
+        width: 100%;
+        max-width: 22rem;
+        padding: 1rem 1.1rem;
+    }
+
+    #subtitulo {
+        justify-content: center;
+        height: auto;
+        margin-left: 0;
+        font-size: 0.75rem;
+    }
+
+    .linha {
+        width: 1.4rem;
+        height: 0.2rem;
+    }
+
+    #texto-subtitulo {
+        margin: 0 0.5rem;
+    }
+
+    #pag-inicio h1 {
+        margin: 0.9rem 0 1.2rem;
+        text-align: center;
+        font-size: 1.65rem;
+        line-height: 2.15rem;
+        white-space: normal;
+    }
+
+    #bt-cardapio {
+        justify-content: center;
+        height: 3.1rem;
+        padding: 0 1rem;
+        border-radius: 1rem;
+        font-size: 0.95rem;
+    }
+
+    #bt-cardapio img {
+        width: 1.5rem;
+        margin-right: 0.6rem;
+    }
+
+    #img-banner {
+        width: 94%;
+        margin-top: 1.4rem;
+        border-radius: 1.25rem;
+    }
+
+
+    /* DIVISÓRIA */
+    #divisoria {
+        padding-top: 0;
+    }
+
+    #barra {
+        height: 2rem;
+    }
+
+
+    /* TELA PRINCIPAL - SOBRE */
+    #pag-sobre {
+        padding: 1rem 0.75rem 2.5rem;
+    }
+
+    #img-sobre {
+        width: 96%;
+        border-radius: 1.25rem;
+    }
+
+    #pag-sobre h2 {
+        margin-top: 1rem;
+        font-size: 1.75rem;
+        line-height: 2.2rem;
+    }
+
+    #pag-sobre h2 span {
+        display: none;
+    }
+
+    #texto-sobre {
+        width: 94%;
+        margin-top: 0.8rem;
+        padding: 0.9rem 1rem;
+        font-size: 0.82rem;
+        line-height: 1.25rem;
+    }
+
+    #destaques {
+        width: 100%;
+        gap: 0.45rem;
+        margin-top: 1.4rem;
+    }
+
+    .caixa {
+        height: auto;
+        min-height: 4.5rem;
+        padding: 0.55rem 0.45rem;
+        font-size: 0.75rem;
+        line-height: 1.05rem;
+    }
+
+    #caixa-1, #caixa-2, #caixa-3 {
+        width: 33.33%;
+        padding-left: 0.45rem;
+    }
+
+
+    /* CITAÇÃO */
+    #citacao {
+        padding: 0.9rem 0.75rem 0.7rem;
+        border-radius: 0.85rem;
+    }
+
+    #frase {
+        font-size: 0.92rem;
+        line-height: 1.35rem;
+    }
+
+    #autor {
+        margin-top: 0.45rem;
+        font-size: 0.95rem;
+        line-height: 1.3rem;
+    }
+
+
+    /* ESPAÇO */
+    #pag-espaco {
+        padding: 1.6rem 0.75rem 1.8rem;
+    }
+
+    #pag-espaco .docker {
+        gap: 1.1rem;
+    }
+
+    .card {
+        width: 48%;
+        max-width: 11.5rem;
+    }
+
+    #card-2 {
+        margin-top: 0;
+    }
+
+    .card-text {
+        padding: 0.45rem 0.35rem 0.55rem;
+    }
+
+    #card-2 .card-text {
+        padding-top: 0.45rem;
+    }
+
+    .card h3 {
+        margin-bottom: 0.35rem;
+        font-size: 0.95rem;
+        line-height: 1.3rem;
+    }
+
+    .card-text p,
+    #card-2 .card-text p {
+        height: 4.6rem;
+        padding: 0.75rem 0.45rem;
+        font-size: 0.72rem;
+        line-height: 1rem;
+    }
+
+
+    /* FOOTER */
+    footer {
+        height: 3.6rem;
+        padding: 0 0.75rem;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 0.72rem;
+    }
+
+
+    /* CARDÁPIO */
+    #pag-cardapio {
+        padding: 2.2rem 1rem 4rem;
+    }
+
+    #pag-cardapio h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    #colunas {
+        grid-template-columns: 1fr;
+        gap: 2.6rem;
+        width: 100%;
+        max-width: 24rem;
+        margin-top: 2.8rem;
+    }
+
+    .coluna {
+        height: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    #coluna-2, #coluna-3 {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .coluna h2, #titulo-doces {
+        margin-bottom: 0.9rem;
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+        font-size: 1.35rem;
+        line-height: 1.8rem;
+    }
+
+    .coluna li {
+        font-size: 0.82rem;
+        line-height: 1.45rem;
+    }
+
+
+    /* RESERVA */
+    #pag-reserva {
+        padding: 2.2rem 1.25rem 4rem;
+    }
+
+    #pag-reserva h1 {
+        font-size: 2.1rem;
+        line-height: 2.6rem;
+    }
+
+    #conteudo-reserva {
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 24rem;
+        margin-top: 2rem;
+    }
+
+    .bloco {
+        margin-bottom: 1.8rem;
+    }
+
+    .bloco h2 {
+        font-size: 1.25rem;
+        line-height: 1.7rem;
+    }
+
+    .bloco p {
+        font-size: 0.82rem;
+        line-height: 1.25rem;
+    }
+
+    form {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.9rem;
+        row-gap: 1.1rem;
+        margin-top: 1rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+
+    input[type="text"], input[type="email"] {
+        height: 2rem;
+        padding: 0 0.65rem;
+        font-size: 0.72rem;
+    }
+
+    #botoes {
+        gap: 0.9rem;
+        margin-top: 0.6rem;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 100%;
+        height: 2.2rem;
+        font-size: 0.85rem;
+    }
+}
