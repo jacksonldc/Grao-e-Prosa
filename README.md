@@ -32,6 +32,11 @@ O **Grão & Prosa** nasceu do conceito de desacelerar a rotina unindo cafés esp
 
 ---
 
+## Participantes:
+- [Jackson Luiz Dias Carvalho](https://github.com/jacksonldc)
+- [Pablo Rodrigues Melo](https://github.com/PabloRdg-dev)
+---
+
 ## 📁 Estrutura de Arquivos
 
 ```text
