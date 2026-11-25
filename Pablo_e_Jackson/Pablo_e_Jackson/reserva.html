@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pablo e Jackson" />
+    <link rel="stylesheet" href="style.css">
+    <title>Reserva - Grão e Prosa</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img id="logo" src="imagens/Logo%20Caf%C3%A9%20Gr%C3%A3o%20%26%20Prosa.png" alt="Logo da cafeteria Grão e Prosa">
+        </a>
+
+        <nav>
+            <a class="a-menu" href="index.html">início</a>
+        </nav>
+
+        <a id="bt-menu-cardapio" href="cardapio.html">
+            <img src="imagens/image%202.png" alt="">
+            CARDÁPIO
+        </a>
+    </header>
+
+    <main id="pag-reserva">
+        <h1>Reserva</h1>
+
+        <div id="conteudo-reserva">
+
+            <div id="info">
+                <div class="bloco">
+                    <h2>HORÁRIO:</h2>
+                    <p>Segunda a Sexta: 07h00 às 19h00</p>
+                    <p>Sábados: 08h00 às 20h00</p>
+                    <p>Domingos e Feriados: 08h00 às 16h00</p>
+                </div>
+
+                <div class="bloco">
+                    <h2>ENDEREÇO:</h2>
+                    <p>SCLN 207 Bloco B, Loja 12</p>
+                    <p>Asa Norte, Brasília - DF,</p>
+                </div>
+
+                <div class="bloco">
+                    <h2>CONTATOS:</h2>
+                    <p>WhatsApp: (61) 99999-9999</p>
+                    <p>E-mail: contato@graoeprosa.com.br</p>
+                </div>
+            </div>
+
+            <form action="" method="get">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="NOME E SOBRENOME:">
+                </div>
+
+                <div class="campo">
+                    <label for="pessoas">Pessoas:</label>
+                    <input type="text" name="pessoas" id="pessoas" placeholder="EX.: 2 PESSOAS">
+                </div>
+
+                <div class="campo">
+                    <label for="data">Data:</label>
+                    <input type="text" name="data" id="data" placeholder="DD/MM/AAAA">
+                </div>
+
+                <div class="campo">
+                    <label for="horario">Horário:</label>
+                    <input type="text" name="horario" id="horario" placeholder="EX.: 16H30">
+                </div>
+
+                <div class="campo" id="campo-email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="NOME@EMAIL.COM">
+                </div>
+
+                <p id="botoes">
+                    <input type="submit" name="bt-enviar" value="ENVIAR">
+                    <input type="reset" name="bt-cancelar" value="CANCELAR">
+                </p>
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por 
+            <a class="nome-footer" href="https://www.instagram.com/_.pablo.rdg/" target="_blank">PABLO</a> e 
+            <a class="nome-footer" href="https://www.instagram.com/jacksonluizdiasc/" target="_blank">JACKSON</a> - 2026
+        </p>
+    </footer>
+
+</body>
+</html>
