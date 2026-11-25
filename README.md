@@ -2,6 +2,8 @@
 
 Website institucional desenvolvido para a cafeteria artesanal **Grão & Prosa**, projetado para transmitir uma atmosfera rústica e acolhedora com navegação intuitiva entre a página inicial, o cardápio digital e o sistema de reservas.
 
+🔗 **[Acessar Protótipo no Figma (Desktop & Mobile)](https://www.figma.com/proto/eZXYjapZAfhZUGTTleT4I6/Gr%C3%A3o---Prosa?node-id=0-1&t=NI2buaZKZB0dVUOg-1)**
+
 ---
 
 ## 📋 Sobre o Projeto
@@ -28,13 +30,15 @@ O **Grão & Prosa** nasceu do conceito de desacelerar a rotina unindo cafés esp
 - **HTML5:** Estruturação semântica das páginas (`header`, `nav`, `section`, `main`, `footer`).
 - **CSS3:** Estilização customizada com **Flexbox**, **CSS Grid**, unidades relativas (`rem`) e **Media Queries** para responsividade entre desktop e smartphones.
 - **Google Fonts:** Tipografias *Playfair Display*, *Montserrat* e *Roboto Mono*.
-- **Figma:** Prototipação de alta fidelidade das interfaces Desktop e Mobile.
+- **Figma:** Prototipação de alta fidelidade das interfaces Desktop e Mobile — [Ver protótipo](https://www.figma.com/proto/eZXYjapZAfhZUGTTleT4I6/Gr%C3%A3o---Prosa?node-id=0-1&t=NI2buaZKZB0dVUOg-1).
 
 ---
 
-## Participantes:
+## 👨‍💻 Participantes
+
 - [Jackson Luiz Dias Carvalho](https://github.com/jacksonldc)
 - [Pablo Rodrigues Melo](https://github.com/PabloRdg-dev)
+
 ---
 
 ## 📁 Estrutura de Arquivos
